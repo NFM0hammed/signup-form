@@ -1,0 +1,71 @@
+@use '../helpers/variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+// Form registration
+.signin,
+.signup {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px;
+    border-top: 3px solid $mainColor;
+    form {
+        h1 {
+            color: $mainColor;
+            font-weight: 500;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            input {
+                background-color: #f9f9f9;
+                margin-bottom: 20px;
+                outline-color: $mainColor;
+            }
+            input, button {
+                padding: 10px;
+                border: none;
+            }
+            button {
+                background-color: $mainColor;
+                color: #fff;
+                margin-top: 20px;
+                cursor: pointer;
+                transition: $transition;
+                &:hover {
+                    background-color: rgb(0, 170, 255);
+                }
+            }
+            p {
+                text-align: left;
+                margin-bottom: 0;
+                font-size: 14px;
+                a {
+                    color: $mainColor;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+// Errors
+.errors {
+    .error {
+        background-color: red;
+        color: #fff;
+        padding: {
+            top: 10px;
+            bottom: 10px;
+        };
+        font-size: 14px;
+    }
+}

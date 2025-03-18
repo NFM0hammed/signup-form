@@ -1,0 +1,49 @@
+@use '../helpers/variables' as *;
+.profile {
+    h1 {
+        color: $mainColor;
+        text-align: center;
+        font-weight: 500;
+    }
+    background-color: #fff;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-top: 2px solid $mainColor;
+    border-radius: 10px;
+    .profile-info {
+        .info {
+            display: flex;
+            align-items: center;
+            &:not(:last-of-type) {
+                border-bottom: 1px solid #f1f1f1
+            }
+            span {
+                font-weight: 400;
+                flex-basis: 20%;
+                text-align: right;
+            }
+            p {
+                color: #ccc;
+                flex: 1;
+                margin-left: 20px;
+                font-weight: 200;
+            }
+        }
+    }
+    form {
+        button {
+            background-color: red;
+            color: #fff;
+            width: 100%;
+            border: none;
+            margin-top: 20px;
+            padding: 10px 5px;
+            cursor: pointer;
+            transition: $transition;
+            &:hover {
+                background-color: rgb(255, 94, 94);
+            }
+        }
+    }
+}

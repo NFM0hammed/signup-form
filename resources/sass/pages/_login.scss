@@ -1,0 +1,10 @@
+@use '../helpers/variables' as *;
+p.new-account {
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 14px;
+    a {
+        color: $mainColor;
+        text-decoration: none;
+    }
+}
